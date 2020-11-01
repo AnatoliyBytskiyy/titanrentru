@@ -1,0 +1,53 @@
+html, body{padding: 0; margin: 0; height: 100%; }
+body{font-family: arial; font-size: 15px; color: #222; background: url('../img/bg.jpg'); line-height: 14px;}
+div.box, div.box1, div.box2{background-color: #fff; width: 370px;  margin: 20px  auto; padding:10px 5px;font-family: arial; padding-bottom:20px; box-shadow: 0 7px 10px #bbb; }
+div.box1{width: 80%;}
+div.box2{width: 600px;}
+div.box11{width: 100%; border-bottom: 1px #1663b0 solid; padding-bottom: 8px; margin-bottom: 10px; text-align: right; }
+div.box12{width: 98%; border-top: 1px #ce911d solid; padding: 8px;}
+div.box-in1{margin: 0  auto;  width:160px;}
+div.box-in2{margin: 0  auto; width:300px;}
+
+input.faq{border: none; background: none; border-bottom: 1px #32558a dashed;  color: #193155; font-size: 18px; margin-bottom: 10px; cursor: hand; cursor: pointer; }
+a{text-decoration: none; border-bottom: 1px #d92128 dashed; color: #02519c; font-size: 16px; }
+a:hover{border: none; color: #d92128;}
+h2{padding:0; margin:0; text-align: center; font-size: 22px; color: #02519c; padding-top: 10px; text-transform: uppercase; font-weight: normal; text-shadow: 1px 1px 1px #fff;} 
+h3{padding:0; margin:0; text-align: center; font-size: 16px; margin-top: 42px; margin-bottom: 15px;} 
+a img{border: none;}
+a.del{border: none;}
+div.img-box{border: 1px #548fc7 solid; width: 210px; padding: 5px 5px 8px 5px; text-align: center; margin-bottom: 10px; }
+a.img{border: none;}
+ul{margin-top:0;}
+ul li{margin-bottom: 8px;}
+div.tit_sub{padding-top: 0px; padding-bottom:3px; cursor: move; }
+ul.sub{ margin-bottom:0;}
+
+
+div.order{position: absolute; top: 7px; right: 3px;}
+
+table.user_info{font-size: 14px;}
+
+ul{list-style:none;}
+div.big-type{font-weight: bold; padding: 3px;}
+ul.sub11{margin-left:25px; padding-left:0;} 
+ul.sub11 li {margin-top: 8px;}
+form.s{margin-left:25px;}
+form.s input.sub{border: 1px #504a34 solid; background-color: #e1dbce; font-size: 13px; cursor: pointer; cursor: hand;}
+form.s1{margin-left:35px; margin-top: 0; padding: 0; margin-bottom: 3px;}
+form.s1 input.sub{border: 1px #504a34 solid; background-color: #f3f1eb; font-size: 11px; cursor: pointer; cursor: hand;}
+ul.sub2 li{padding-top:0; margin-top:0; border: 1px sransparent solid;}
+li.country{margin-top: 7px; margin-bottom: 7px;}
+div.line1{height: 1px; border-top: 1px #504a34 solid;}
+
+div.line { 
+border-bottom: 1px dotted #aaa;
+height: 1px;
+margin-bottom: 6px;
+margin-top: 0px;
+}
+
+
+
+input.mini{font-size: 12px;}
+
+table.table{font-size: 12px; background: #d7e9fa; width: 100%;}

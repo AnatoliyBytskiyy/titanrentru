@@ -1,0 +1,11 @@
+RewriteEngine on
+
+RewriteRule ^class-standart$ catalog.php?type=1
+RewriteRule ^class-comfort$ catalog.php?type=2
+RewriteRule ^class-business$ catalog.php?type=3
+
+RewriteRule ^about_avtotitan$ content.php?id=2
+RewriteRule ^contacts$ content.php?id=3
+RewriteRule ^terms_rent$ content.php?id=4
+
+RewriteRule ^distance$ km_count.php

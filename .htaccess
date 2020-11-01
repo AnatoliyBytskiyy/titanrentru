@@ -1,0 +1,68 @@
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^www\.titan-rent\.ru$ [NC] 
+RewriteRule ^(.*)$ http://titan-rent.ru/$1 [R=301,L] 
+
+RewriteRule ^class-standart$ catalog.php?type=1
+RewriteRule ^class-comfort$ catalog.php?type=2
+RewriteRule ^class-business$ catalog.php?type=3
+
+RewriteRule ^about_avtotitan$ content.php?id=2
+RewriteRule ^contacts$ content.php?id=3
+RewriteRule ^terms_rent$ content.php?id=4
+
+RewriteRule ^distance$ km_count.php
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/ 
+RewriteRule ^index\.php$ http://titan-rent.ru/ [R=301,L] 
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/ 
+RewriteRule ^index\.html$ http://titan-rent.ru/ [R=301,L] 
+
+
+ErrorDocument 404 /404.php
+
+RewriteRule ^news$ news/
+RewriteRule ^news/$ content.php?id=5
+RewriteRule ^news/index.php$ content.php?id=5
+RewriteRule ^news/1$ content.php?id=6
+RewriteRule ^news/2$ content.php?id=7
+RewriteRule ^airport$ content.php?id=8
+RewriteRule ^news/3$ content.php?id=9
+RewriteRule ^news/4$ content.php?id=10
+RewriteRule ^news/5$ content.php?id=11
+RewriteRule ^news/6$ content.php?id=12
+RewriteRule ^news/7$ content.php?id=13
+RewriteRule ^news/8$ content.php?id=14
+
+
+<ifModule mod_headers.c>
+    <FilesMatch "\.(html|htm)$">
+        Header set Cache-Control "max-age=43200"
+    </FilesMatch>
+    <FilesMatch "\.(js|css|txt)$">
+        Header set Cache-Control "max-age=604800"
+    </FilesMatch>
+    <FilesMatch "\.(flv|swf|ico|gif|jpg|jpeg|png|woff|ttf|svg)$">
+        Header set Cache-Control "max-age=2592000"
+    </FilesMatch>
+    <FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
+        Header unset Cache-Control
+    </FilesMatch>
+</IfModule>
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 month"
+
+    ExpiresByType image/x-icon "access plus 2 months"
+    ExpiresByType image/jpeg "access plus 2 months"
+    ExpiresByType image/png "access plus 2 months"
+    ExpiresByType image/gif "access plus 2 months"
+    ExpiresByType application/x-shockwave-flash "access plus 2 months"
+    ExpiresByType text/css "access plus 2 months"
+    ExpiresByType text/javascript "access plus 2 months"
+    ExpiresByType application/javascript "access plus 2 months"
+    ExpiresByType application/x-javascript "access plus 2 months"
+    ExpiresByType text/html "access plus 2 months"
+    ExpiresByType application/xhtml+xml "access plus 2 months"
+</IfModule>

@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /admin
+Disallow: */order.php
+
+
+Sitemap: http://titan-rent.ru/sitemap.xml
+Host: titan-rent.ru

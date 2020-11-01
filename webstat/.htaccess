@@ -1,0 +1,7 @@
+AuthType Basic
+AuthName "/www/titan-rent.ru/webstat"
+AuthUserFile /var/www/pogrem11292/data/etc/26659652.passwd
+DirectoryIndex index.html
+<Limit GET POST>
+	require valid-user
+</Limit>
